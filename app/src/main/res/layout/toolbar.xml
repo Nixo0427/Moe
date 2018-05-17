@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#5769b4"
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+
+        <EditText
+            android:id="@+id/toolbar_serch"
+            android:layout_width="250dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/toolbar_serch_Btn"
+            android:background="@mipmap/toolbarserch"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

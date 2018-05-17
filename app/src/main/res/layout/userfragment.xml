@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/userbg"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="218dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/head" />
+
+                <Button
+                    android:id="@+id/user_edit"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/user_img"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@mipmap/edit" />
+            </RelativeLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="#f2000000"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="用户名:"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/user_user"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="年龄:"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/user_age"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="性别:"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioGroup
+                android:id="@+id/user_sex"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/user_boy"
+                    android:text="男"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/user_girl"
+                    android:text="女"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="简历:"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/user_desc"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/user_save"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/user_save_cancel"
+                android:text="取消编辑"
+                android:background="@drawable/button_bg"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="125dp"
+                android:layout_height="35dp" />
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/user_save_save"
+            android:text="保存资料"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="125dp"
+
+            android:layout_height="35dp" />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/user_logout"
+            android:text="退出登录"
+            android:background="@drawable/button_red"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+</ScrollView>

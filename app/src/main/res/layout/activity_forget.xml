@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/login_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.ui.ForgetActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#994ce6fd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back"
+            android:layout_width="30dp"
+            android:layout_height="34dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <EditText
+        android:id="@+id/forget_email"
+        android:hint="请输入邮箱"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/setEmail"
+        android:layout_marginLeft="60dp"
+        android:textColor="#fff"
+        android:text="发送邮件"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_bg"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
